@@ -2,6 +2,8 @@
 
 **Read this in other languages: [中文](readme_zh.md).**
 
+![Overview](./docs/Overview.png)
+
 ## Overview
 
 The Clipboard Manager is a lightweight clipboard management tool 📋 designed to help you keep track of and manage your clipboard history. With its user-friendly graphical user interface, you can easily view and paste from your clipboard history. All your clipboard items are persistently stored, ensuring that your history is intact even after restarting the application. 🗂️
