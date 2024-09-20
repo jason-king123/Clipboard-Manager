@@ -1,58 +1,60 @@
-# Clipboard Manager 📋
+# Clipboard Manager
 
-## 简介
+**Read this in other languages: [中文](README_zh.md).**
 
-Clipboard Manager 是一个轻量级的剪贴板管理工具 🔧，它可以帮助你记录和查看剪贴板历史记录，方便你快速粘贴所需的内容。通过图形用户界面，你可以轻松管理剪贴板内容，并且所有记录都会持久化存储，即使重启电脑也记录也不会消失。🗂️
+## Overview
 
-## 功能
+The Clipboard Manager is a lightweight clipboard management tool 📋 designed to help you keep track of and manage your clipboard history. With its user-friendly graphical user interface, you can easily view and paste from your clipboard history. All your clipboard items are persistently stored, ensuring that your history is intact even after restarting the application. 🗂️
 
-- **剪贴板历史记录**：自动记录剪贴板中的文本内容。
-- **实时更新**：定期检查剪贴板变化并更新列表。
-- **持久化存储**：将剪贴板历史记录保存到本地 JSON 文件中。
-- **快速访问**：通过双击列表中的项目，快速复制到剪贴板。
-- **清空历史**：一键清空剪贴板历史记录。
-- **界面友好**：简洁的图形用户界面，易于操作。
+## Features
 
-## 使用方法
+- **Clipboard History**: Automatically records text from your clipboard.
+- **Real-time Updates**: Monitors clipboard changes and updates the list in real-time.
+- **Persistent Storage**: Saves clipboard history to a local JSON file.
+- **Quick Access**: Double-click on an item in the list to copy it back to the clipboard.
+- **Clear History**: One-click to clear all clipboard history.
+- **User-friendly Interface**: A clean and easy-to-use graphical interface.
 
-1. 运行 `ClipboardManager.py` 启动程序。
-2. 复制任何文本到剪贴板，程序会自动记录。
-3. 在程序界面中查看和管理剪贴板历史记录。
-4. 双击列表中的项目，将其复制回剪贴板。
-5. 点击“Clear”按钮清空历史记录。
+## Usage
 
-## 打包成 EXE
+1. Run `ClipboardManager.py` to start the application.
+2. Copy any text to your clipboard, and the application will automatically record it.
+3. View and manage your clipboard history in the application window.
+4. Double-click on an item in the list to copy it to the clipboard.
+5. Click the "Clear" button to clear the history.
 
-要将这个脚本打包成可执行文件，你可以使用 `pyinstaller`。以下是步骤：
+## Packaging into EXE
 
-1. 首先，确保你已经安装了 `pyinstaller`。如果没有，可以通过运行以下命令安装：
+To package this script into an executable file, you can use `pyinstaller`. Here are the steps:
+
+1. First, ensure you have `pyinstaller` installed. If not, you can install it by running:
 
    ```bash
    pip install pyinstaller
    ```
 
-2. 在项目路径下打开命令行或终端。
+2. Open a command line or terminal in the project directory.
 
-3. 运行以下命令来打包脚本：
+3. Run the following command to package the script:
 
    ```bash
    pyinstaller --onefile --add-data "clipboard_data.json;." --add-data "sad.ico;." ClipboardManager.py
    ```
 
-   这个命令会创建一个单独的可执行文件，并将 `clipboard_data.json` 和 `sad.ico` 文件包含在内。
+   This command creates a single executable file and includes the `clipboard_data.json` and `sad.ico` files.
 
-4. 执行文件将位于 `dist` 目录下，你可以将其分发给其他用户使用。
+4. The executable will be located in the `dist` directory, which you can distribute to other users.
 
-## 注意事项
+## Notes
 
-- 目前，这个脚本只能处理文本内容，不支持图片或其他非文本格式的剪贴板内容。🖼️
-- 请确保在运行程序时具有足够的权限来访问剪贴板和文件系统。
+- Currently, this script only handles text content and does not support images or other non-text clipboard content. 🖼️
+- Ensure you have the necessary permissions to access the clipboard and file system when running the program.
 
-## 未来改进
+## Future Improvements
 
-- 增加对图片和其他媒体类型剪贴板内容的支持。
-- 优化用户界面，提供更丰富的功能和更好的用户体验。
+- Add support for images and other media types in clipboard content.
+- Enhance the user interface to provide more features and a better user experience.
 
 ---
 
-希望这个剪贴板管理工具能提高你的工作效率！🚀 如果有任何问题或建议，欢迎提出。
+Hope this clipboard management tool boosts your productivity! 🚀 If you have any questions or suggestions, feel free to reach out.
