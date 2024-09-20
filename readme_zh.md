@@ -1,6 +1,6 @@
 # Clipboard Manager 📋
 
-**其他语言版本: [English](README.md)**
+**其他语言版本: [English](readme.md)**
 
 ## 简介
 
